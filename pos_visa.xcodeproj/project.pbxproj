@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		EDED80A31B7AC9B700D0ECAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDED80A21B7AC9B700D0ECAA /* main.m */; };
 		EDED80A61B7AC9B700D0ECAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDED80A51B7AC9B700D0ECAA /* AppDelegate.m */; };
-		EDED80A91B7AC9B700D0ECAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDED80A81B7AC9B700D0ECAA /* ViewController.m */; };
 		EDED80AC1B7AC9B700D0ECAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDED80AA1B7AC9B700D0ECAA /* Main.storyboard */; };
 		EDED80AE1B7AC9B700D0ECAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDED80AD1B7AC9B700D0ECAA /* Images.xcassets */; };
 		EDED80B11B7AC9B700D0ECAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDED80AF1B7AC9B700D0ECAA /* LaunchScreen.xib */; };
 		EDED80BD1B7AC9B700D0ECAA /* pos_visaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDED80BC1B7AC9B700D0ECAA /* pos_visaTests.m */; };
+		EDED80C81B7ACEEA00D0ECAA /* GetStartedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDED80C71B7ACEEA00D0ECAA /* GetStartedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		EDED80A21B7AC9B700D0ECAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDED80A41B7AC9B700D0ECAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDED80A51B7AC9B700D0ECAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EDED80A71B7AC9B700D0ECAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EDED80A81B7AC9B700D0ECAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EDED80AB1B7AC9B700D0ECAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDED80AD1B7AC9B700D0ECAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EDED80B01B7AC9B700D0ECAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EDED80B61B7AC9B700D0ECAA /* pos_visaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pos_visaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDED80BB1B7AC9B700D0ECAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDED80BC1B7AC9B700D0ECAA /* pos_visaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pos_visaTests.m; sourceTree = "<group>"; };
+		EDED80C61B7ACEEA00D0ECAA /* GetStartedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStartedViewController.h; sourceTree = "<group>"; };
+		EDED80C71B7ACEEA00D0ECAA /* GetStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStartedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +83,12 @@
 			children = (
 				EDED80A41B7AC9B700D0ECAA /* AppDelegate.h */,
 				EDED80A51B7AC9B700D0ECAA /* AppDelegate.m */,
-				EDED80A71B7AC9B700D0ECAA /* ViewController.h */,
-				EDED80A81B7AC9B700D0ECAA /* ViewController.m */,
 				EDED80AA1B7AC9B700D0ECAA /* Main.storyboard */,
 				EDED80AD1B7AC9B700D0ECAA /* Images.xcassets */,
 				EDED80AF1B7AC9B700D0ECAA /* LaunchScreen.xib */,
 				EDED80A01B7AC9B700D0ECAA /* Supporting Files */,
+				EDED80C61B7ACEEA00D0ECAA /* GetStartedViewController.h */,
+				EDED80C71B7ACEEA00D0ECAA /* GetStartedViewController.m */,
 			);
 			path = pos_visa;
 			sourceTree = "<group>";
@@ -219,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDED80A91B7AC9B700D0ECAA /* ViewController.m in Sources */,
 				EDED80A61B7AC9B700D0ECAA /* AppDelegate.m in Sources */,
 				EDED80A31B7AC9B700D0ECAA /* main.m in Sources */,
+				EDED80C81B7ACEEA00D0ECAA /* GetStartedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
