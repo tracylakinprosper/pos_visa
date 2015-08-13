@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GetStartedViewController : UINavigationController
+@interface GetStartedViewController : UIViewController
+
 
 @end
