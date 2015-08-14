@@ -28,9 +28,13 @@ const CGFloat kScrollView_y = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Apply For Your Loan";
+
     self.loanAmount_TextField.delegate = self;
+
 /***
     self.applyForLoan_ScrollView.frame         = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+
     self.applyForLoan_ScrollView.contentSize   = CGSizeMake(      self.view.frame.size.width, self.view.frame.size.height * 2);
     self.applyForLoan_ScrollView.contentOffset = CGPointZero;
     self.applyForLoan_ScrollView.userInteractionEnabled = YES;
