@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED7753C41B7EB69200BFF966 /* SSNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7753C21B7EB69200BFF966 /* SSNViewController.m */; };
+		ED7753CA1B7EB9CB00BFF966 /* threeBarsHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753C81B7EB9CB00BFF966 /* threeBarsHeader.png */; };
+		ED7753CB1B7EB9CB00BFF966 /* twoBarsHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753C91B7EB9CB00BFF966 /* twoBarsHeader.png */; };
+		ED7753CE1B7EBD6500BFF966 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7753CD1B7EBD6500BFF966 /* Constants.m */; };
 		ED9F97CE1B7E5D8C00B633AD /* EditPersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F97CD1B7E5D8C00B633AD /* EditPersonalInfoViewController.m */; };
 		ED9F97D21B7E761F00B633AD /* FormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED9F97D11B7E761F00B633AD /* FormTextCell.xib */; };
 		ED9F97D51B7E8D0900B633AD /* FormTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F97D41B7E8D0900B633AD /* FormTextCell.m */; };
@@ -83,6 +87,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED7753C11B7EB69200BFF966 /* SSNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNViewController.h; sourceTree = "<group>"; };
+		ED7753C21B7EB69200BFF966 /* SSNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNViewController.m; sourceTree = "<group>"; };
+		ED7753C81B7EB9CB00BFF966 /* threeBarsHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = threeBarsHeader.png; path = Images.xcassets/threeBarsHeader.png; sourceTree = "<group>"; };
+		ED7753C91B7EB9CB00BFF966 /* twoBarsHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twoBarsHeader.png; path = Images.xcassets/twoBarsHeader.png; sourceTree = "<group>"; };
+		ED7753CC1B7EBD3300BFF966 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		ED7753CD1B7EBD6500BFF966 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		ED9F97CC1B7E5D8C00B633AD /* EditPersonalInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPersonalInfoViewController.h; sourceTree = "<group>"; };
 		ED9F97CD1B7E5D8C00B633AD /* EditPersonalInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPersonalInfoViewController.m; sourceTree = "<group>"; };
 		ED9F97D11B7E761F00B633AD /* FormTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormTextCell.xib; sourceTree = "<group>"; };
@@ -286,12 +296,16 @@
 				ED9F97E21B7E9B8E00B633AD /* ImageTableViewCell.m */,
 				ED9F97E91B7EA70B00B633AD /* PersonalData.h */,
 				ED9F97EA1B7EA70B00B633AD /* PersonalData.m */,
+				ED7753C11B7EB69200BFF966 /* SSNViewController.h */,
+				ED7753C21B7EB69200BFF966 /* SSNViewController.m */,
 				EDED80AF1B7AC9B700D0ECAA /* LaunchScreen.xib */,
 				EDED80AA1B7AC9B700D0ECAA /* Main.storyboard */,
 				ED9F97D11B7E761F00B633AD /* FormTextCell.xib */,
 				ED9F97DE1B7E9B7600B633AD /* ButtonTableViewCell.xib */,
 				ED9F97E31B7E9B8E00B633AD /* ImageTableViewCell.xib */,
 				EDED80AD1B7AC9B700D0ECAA /* Images.xcassets */,
+				ED7753C81B7EB9CB00BFF966 /* threeBarsHeader.png */,
+				ED7753C91B7EB9CB00BFF966 /* twoBarsHeader.png */,
 				EDE9A53E1B7D86C900B11E20 /* v2-C2_TitleOnly.png */,
 				EDE9A5041B7D489700B11E20 /* v2-b1_nocredit_msg.png */,
 				EDEAB5B41B7BCAAB00DAA650 /* v2_A00.png */,
@@ -315,6 +329,8 @@
 				EDEAB5C51B7BCAAB00DAA650 /* v2-I2.png */,
 				EDEAB5C61B7BCAAB00DAA650 /* v2-J1.png */,
 				EDED80A01B7AC9B700D0ECAA /* Supporting Files */,
+				ED7753CC1B7EBD3300BFF966 /* Constants.h */,
+				ED7753CD1B7EBD6500BFF966 /* Constants.m */,
 			);
 			path = pos_visa;
 			sourceTree = "<group>";
@@ -426,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDEAB5D01B7BCAAB00DAA650 /* v2-D1.png in Resources */,
+				ED7753CA1B7EB9CB00BFF966 /* threeBarsHeader.png in Resources */,
 				ED9F97E01B7E9B7600B633AD /* ButtonTableViewCell.xib in Resources */,
 				EDED80AC1B7AC9B700D0ECAA /* Main.storyboard in Resources */,
 				EDEAB5D51B7BCAAB00DAA650 /* v2-H1.png in Resources */,
@@ -439,6 +456,7 @@
 				EDED80B11B7AC9B700D0ECAA /* LaunchScreen.xib in Resources */,
 				EDEAB5D21B7BCAAB00DAA650 /* v2-F1.png in Resources */,
 				EDEAB5D41B7BCAAB00DAA650 /* v2-G2.png in Resources */,
+				ED7753CB1B7EB9CB00BFF966 /* twoBarsHeader.png in Resources */,
 				EDEAB5D31B7BCAAB00DAA650 /* v2-G1.png in Resources */,
 				ED9F97E51B7E9B8E00B633AD /* ImageTableViewCell.xib in Resources */,
 				EDE9A5351B7D81A800B11E20 /* Localizable-Netverify.strings in Resources */,
@@ -473,12 +491,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED9F97DF1B7E9B7600B633AD /* ButtonTableViewCell.m in Sources */,
+				ED7753C41B7EB69200BFF966 /* SSNViewController.m in Sources */,
 				ED9F97E41B7E9B8E00B633AD /* ImageTableViewCell.m in Sources */,
 				EDE9A5081B7D592900B11E20 /* PersonalInfoTop_TableViewCell.m in Sources */,
 				EDE9A5011B7C2B0A00B11E20 /* PersonalInfoViewController.m in Sources */,
 				ED9F97CE1B7E5D8C00B633AD /* EditPersonalInfoViewController.m in Sources */,
 				EDED80A61B7AC9B700D0ECAA /* AppDelegate.m in Sources */,
 				EDEAB5E71B7C062700DAA650 /* ApplyForLoanViewController.m in Sources */,
+				ED7753CE1B7EBD6500BFF966 /* Constants.m in Sources */,
 				EDE9A5421B7D87B800B11E20 /* EditPersonalInfoTableViewCell.m in Sources */,
 				ED9F97EB1B7EA70B00B633AD /* PersonalData.m in Sources */,
 				EDEAB5E41B7C05D300DAA650 /* RootNavigationController.m in Sources */,

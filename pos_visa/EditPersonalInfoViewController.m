@@ -11,6 +11,8 @@
 #import "FormTextCell.h"
 #import "ButtonTableViewCell.h"
 #import "ImageTableViewCell.h"
+#import "SSNViewController.h"
+#import "Constants.h"
 
 @interface EditPersonalInfoViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -46,22 +48,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return kTotalRows;
+    return kEditPersonalInfo_TotalRows;
 }
 
 
-const NSInteger kTopImageRow      = 0;
-const NSInteger kFirstNameRow     = 1;
-const NSInteger kLastNameRow      = 2;
-const NSInteger kMiddleInitialRow = 3;
-const NSInteger kHomeAddressRow   = 4;
-const NSInteger kCityRow          = 5;
-const NSInteger kStateRow         = 6;
+const NSInteger kEditPersonalInfo_TopImageRow      = 0;
+const NSInteger kEditPersonalInfo_FirstNameRow     = 1;
+const NSInteger kEditPersonalInfo_LastNameRow      = 2;
+const NSInteger kEditPersonalInfo_MiddleInitialRow = 3;
+const NSInteger kEditPersonalInfo_HomeAddressRow   = 4;
+const NSInteger kEditPersonalInfo_CityRow          = 5;
+const NSInteger kEditPersonalInfo_StateRow         = 6;
 
-const NSInteger kNextButtonRow    = 7;
-const NSInteger kFooterImageRow   = 8;
+const NSInteger kEditPersonalInfo_NextButtonRow    = 7;
+const NSInteger kEditPersonalInfo_FooterImageRow   = 8;
 
-const NSInteger kTotalRows        = 9;
+const NSInteger kEditPersonalInfo_TotalRows        = 9;
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -72,11 +74,11 @@ const NSInteger kTotalRows        = 9;
     NSLog(@"EditPersonalInfo cellForRowAtIndexPath: %@", indexPath);
     
     switch (indexPath.row) {
-        case kTopImageRow:
+        case kEditPersonalInfo_TopImageRow:
             return [self getTopImageCell];
             break;
  
-        case kFirstNameRow:
+        case kEditPersonalInfo_FirstNameRow:
         {
             FormTextCell * cell = [self getFormCell:self.tableView];
             cell.titleLabel.text    = @"FIRST NAME";
@@ -88,7 +90,7 @@ const NSInteger kTotalRows        = 9;
         }
             break;
             
-        case kLastNameRow:
+        case kEditPersonalInfo_LastNameRow:
         {
             FormTextCell * cell = [self getFormCell:self.tableView];
             cell.titleLabel.text    = @"LAST NAME";
@@ -100,7 +102,7 @@ const NSInteger kTotalRows        = 9;
         }
             break;
             
-        case kMiddleInitialRow:
+        case kEditPersonalInfo_MiddleInitialRow:
         {
             FormTextCell * cell = [self getFormCell:self.tableView];
             cell.titleLabel.text    = @"MIDDLE INITIAL";
@@ -115,7 +117,7 @@ const NSInteger kTotalRows        = 9;
        }
             break;
             
-        case kHomeAddressRow:
+        case kEditPersonalInfo_HomeAddressRow:
         {
             FormTextCell * cell = [self getFormCell:self.tableView];
             cell.titleLabel.text    = @"HOME ADDRESS";
@@ -127,7 +129,7 @@ const NSInteger kTotalRows        = 9;
         }
             break;
 
-        case kCityRow:
+        case kEditPersonalInfo_CityRow:
         {
             FormTextCell * cell = [self getFormCell:self.tableView];
             cell.titleLabel.text    = @"CITY";
@@ -139,7 +141,7 @@ const NSInteger kTotalRows        = 9;
         }
             break;
             
-        case kStateRow:
+        case kEditPersonalInfo_StateRow:
         {
             FormTextCell * cell = [self getFormCell:self.tableView];
             cell.titleLabel.text    = @"STATE";
@@ -157,19 +159,45 @@ const NSInteger kTotalRows        = 9;
         }
             break;
             
-        case kNextButtonRow:
+        case kEditPersonalInfo_NextButtonRow:
         {
             ButtonTableViewCell * cell = [self getButtonCell:self.tableView];
             cell.buttonView.titleLabel.text = @"Next";
+            [cell.buttonView addTarget:self
+                                action:@selector(transitionToSSN)
+                    forControlEvents:UIControlEventTouchUpInside];
             return cell;
         }
             break;
 
-        case kFooterImageRow:
+        case kEditPersonalInfo_FooterImageRow:
         {
             ImageTableViewCell * cell = [self getImageCell:self.tableView];
             UIImage * footerImage = [UIImage imageNamed:@"v2_K1_footer.png"];
-            cell.imageForCell = [[UIImageView alloc] initWithImage:footerImage];
+            
+            NSLog(@"kEditPersonalInfo_FooterImageRow   1  \n footerImage size: %@ \n cell frame: %@  \n imageView frame: %@  \n content frame: %@", NSStringFromCGSize(footerImage.size), NSStringFromCGRect(cell.imageForCell.frame), NSStringFromCGRect(cell.frame), NSStringFromCGRect(cell.contentView.frame));
+
+//            CGRect imageFrame = cell.imageForCell.frame;
+//            imageFrame.size.height = footerImage.size.height;
+//            imageFrame.size.width  = footerImage.size.width;
+//            cell.imageForCell.frame = imageFrame;
+//
+//            CGRect imageFrameCell = cell.frame;
+//            imageFrameCell.size.height = footerImage.size.height;
+//            imageFrameCell.size.width  = footerImage.size.width;
+//            cell.frame = imageFrameCell;
+//
+//            CGRect contentFrame = cell.contentView.frame;
+//            contentFrame.size.height = footerImage.size.height;
+//            contentFrame.size.width  = footerImage.size.width;
+//            cell.contentView.frame = contentFrame;
+//
+//            NSLog(@"kEditPersonalInfo_FooterImageRow   2  \n footerImage size: %@ \n cell frame: %@  \n imageView frame: %@  \n content frame: %@", NSStringFromCGSize(footerImage.size), NSStringFromCGRect(cell.imageForCell.frame), NSStringFromCGRect(cell.frame), NSStringFromCGRect(cell.contentView.frame));
+
+            cell.imageForCell.image = footerImage;
+ 
+            NSLog(@"kEditPersonalInfo_FooterImageRow   3  \n footerImage size: %@ \n cell frame: %@  \n imageView frame: %@  \n content frame: %@", NSStringFromCGSize(footerImage.size), NSStringFromCGRect(cell.imageForCell.frame), NSStringFromCGRect(cell.frame), NSStringFromCGRect(cell.contentView.frame));
+           
             return cell;
         }
             break;
@@ -181,14 +209,6 @@ const NSInteger kTotalRows        = 9;
     return nil;
 }
 
-NSString * const ScanDriversLicense_TableViewCell_CELL_IDENTIFIER = @"ScanDriversLicense_TableViewCell";
-
-NSString * const FormTextCell_CELL_IDENTIFIER = @"FormTextCell";
-NSString * const FormTextCell_XIB_NAME        = @"FormTextCell";
-
-NSString * const ButtonTextCell_CELL_IDENTIFIER = @"ButtonTableViewCell";
-
-NSString * const ImageTextCell_CELL_IDENTIFIER = @"ImageTableViewCell";
 
 - (UITableViewCell *)getTopImageCell
 {
@@ -239,34 +259,45 @@ NSString * const ImageTextCell_CELL_IDENTIFIER = @"ImageTableViewCell";
     CGFloat height = 0.0f;
     
     switch (indexPath.row) {
-        case kTopImageRow:
+        case kEditPersonalInfo_TopImageRow:
             height = 80.0f;
             break;
 
-        case kFirstNameRow:
-        case kLastNameRow:
-        case kMiddleInitialRow:
-        case kHomeAddressRow:
-        case kCityRow:
-        case kStateRow:
-            height = 75.0f;
+        case kEditPersonalInfo_FirstNameRow:
+        case kEditPersonalInfo_LastNameRow:
+        case kEditPersonalInfo_MiddleInitialRow:
+        case kEditPersonalInfo_HomeAddressRow:
+        case kEditPersonalInfo_CityRow:
+        case kEditPersonalInfo_StateRow:
+            height = 74.0f;
             break;
             
-        case kNextButtonRow:
+        case kEditPersonalInfo_NextButtonRow:
             height = 90.0f;
             break;
             
-        case kFooterImageRow:
-            height = 600.0f;
+        case kEditPersonalInfo_FooterImageRow:
+            height = 563.0f;
             break;
 
        default:
             break;
     }
     return height;
-    
-    
 }
+
+
+#pragma mark - segue to next storyboard
+
+NSString * const kSSNStoryboardID = @"SSNViewControllerStoryboardID";
+
+- (void) transitionToSSN
+{
+    SSNViewController * controller = [self.storyboard instantiateViewControllerWithIdentifier:kSSNStoryboardID];
+
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
 
 
 @end

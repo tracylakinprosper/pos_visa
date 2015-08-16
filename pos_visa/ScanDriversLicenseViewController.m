@@ -304,7 +304,7 @@ NSString * const kEditPersonalInfoStoryboardID = @"EditPersonalInfoStoryboardID"
 
 - (void) transitionToEditPersonalInfo:(PersonalData *) personalData
 {
-    EditPersonalInfoViewController * controller = [self.storyboard instantiateViewControllerWithIdentifier:@"EditPersonalInfoStoryboardID"];
+    EditPersonalInfoViewController * controller = [self.storyboard instantiateViewControllerWithIdentifier:kEditPersonalInfoStoryboardID];
     
     controller.personalData = personalData;
     
