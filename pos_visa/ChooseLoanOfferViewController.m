@@ -66,7 +66,7 @@ const NSInteger kkChooseLoan_TotalRows       = 4;
         case kChooseLoan_TopImageRow:
         {
             ImageTableViewCell * cell = [self getImageCell:self.tableView];
-            UIImage * headerImage = [UIImage imageNamed:@"CHooseYourLoan_Top.png"];
+            UIImage * headerImage = [UIImage imageNamed:@"ChooseYourLoan_Top.png"];
             cell.imageForCell.image = headerImage;
             return cell;
         }
