@@ -7,6 +7,7 @@
 //
 
 #import "ApplyForLoanViewController.h"
+#import "Constants.h"
 
 @interface ApplyForLoanViewController () <UITextFieldDelegate>
 
@@ -133,8 +134,8 @@ const CGFloat kScrollView_y = 0;
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
-    NSLog(@"prepareForSegue     ApplyForLoanViewController seque: %@", segue);
-    NSLog(@"\n=== prepareForSegue ApplyForLoanViewController  \n applyForLoan_ScrollView: %@, \n applyForLoan_ScrollView.contentSize: %@", self.applyForLoan_ScrollView, NSStringFromCGSize(self.applyForLoan_ScrollView.contentSize));
+//    NSLog(@"prepareForSegue     ApplyForLoanViewController seque: %@", segue);
+//    NSLog(@"\n=== prepareForSegue ApplyForLoanViewController  \n applyForLoan_ScrollView: %@, \n applyForLoan_ScrollView.contentSize: %@", self.applyForLoan_ScrollView, NSStringFromCGSize(self.applyForLoan_ScrollView.contentSize));
 
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
@@ -145,6 +146,7 @@ const CGFloat kScrollView_y = 0;
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     textField.text = @"";       // Do on main thread? TODO
+    textField.textColor = textColor_darkGray;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField              // called when 'return' key pressed. return NO to ignore.

@@ -18,4 +18,10 @@ extern NSString * const ButtonTextCell_CELL_IDENTIFIER;
 
 extern NSString * const ImageTextCell_CELL_IDENTIFIER;
 
+
+#define textColor_darkGray [UIColor colorWithRed:86.0f/255.0f green:90.0f/255.0f blue:93.0f/255.0f alpha:1.0f]
+
+
+#define buttonGreen [UIColor colorWithRed:69.0f/255.0f green:210.0f/255.0f blue:93.0f/255.0f alpha:1.0f]
+
 #endif

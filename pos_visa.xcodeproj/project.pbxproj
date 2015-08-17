@@ -11,6 +11,15 @@
 		ED7753CA1B7EB9CB00BFF966 /* threeBarsHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753C81B7EB9CB00BFF966 /* threeBarsHeader.png */; };
 		ED7753CB1B7EB9CB00BFF966 /* twoBarsHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753C91B7EB9CB00BFF966 /* twoBarsHeader.png */; };
 		ED7753CE1B7EBD6500BFF966 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7753CD1B7EBD6500BFF966 /* Constants.m */; };
+		ED7753D01B816A8C00BFF966 /* SSN_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753CF1B816A8C00BFF966 /* SSN_Top.png */; };
+		ED7753D61B819F1600BFF966 /* ChooseYourLoan_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753D31B819F1600BFF966 /* ChooseYourLoan_Top.png */; };
+		ED7753D71B819F1600BFF966 /* LoanOfferOne.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753D41B819F1600BFF966 /* LoanOfferOne.png */; };
+		ED7753D81B819F1600BFF966 /* LoanOfferTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753D51B819F1600BFF966 /* LoanOfferTwo.png */; };
+		ED7753DB1B819F4F00BFF966 /* ChooseLoanOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7753DA1B819F4F00BFF966 /* ChooseLoanOfferViewController.m */; };
+		ED7753DE1B81A42F00BFF966 /* TruthInLendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7753DD1B81A42F00BFF966 /* TruthInLendingViewController.m */; };
+		ED7753E21B81AA2D00BFF966 /* LoanDoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7753E11B81AA2D00BFF966 /* LoanDoneViewController.m */; };
+		ED7753E51B81ACCD00BFF966 /* LoanDone_Middle.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753E31B81ACCD00BFF966 /* LoanDone_Middle.png */; };
+		ED7753E61B81ACCD00BFF966 /* LoanDone_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753E41B81ACCD00BFF966 /* LoanDone_Top.png */; };
 		ED9F97CE1B7E5D8C00B633AD /* EditPersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F97CD1B7E5D8C00B633AD /* EditPersonalInfoViewController.m */; };
 		ED9F97D21B7E761F00B633AD /* FormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED9F97D11B7E761F00B633AD /* FormTextCell.xib */; };
 		ED9F97D51B7E8D0900B633AD /* FormTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F97D41B7E8D0900B633AD /* FormTextCell.m */; };
@@ -93,6 +102,18 @@
 		ED7753C91B7EB9CB00BFF966 /* twoBarsHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twoBarsHeader.png; path = Images.xcassets/twoBarsHeader.png; sourceTree = "<group>"; };
 		ED7753CC1B7EBD3300BFF966 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		ED7753CD1B7EBD6500BFF966 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		ED7753CF1B816A8C00BFF966 /* SSN_Top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SSN_Top.png; path = Images.xcassets/SSN_Top.png; sourceTree = "<group>"; };
+		ED7753D31B819F1600BFF966 /* ChooseYourLoan_Top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ChooseYourLoan_Top.png; path = Images.xcassets/ChooseYourLoan_Top.png; sourceTree = "<group>"; };
+		ED7753D41B819F1600BFF966 /* LoanOfferOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoanOfferOne.png; path = Images.xcassets/LoanOfferOne.png; sourceTree = "<group>"; };
+		ED7753D51B819F1600BFF966 /* LoanOfferTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoanOfferTwo.png; path = Images.xcassets/LoanOfferTwo.png; sourceTree = "<group>"; };
+		ED7753D91B819F4F00BFF966 /* ChooseLoanOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseLoanOfferViewController.h; sourceTree = "<group>"; };
+		ED7753DA1B819F4F00BFF966 /* ChooseLoanOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseLoanOfferViewController.m; sourceTree = "<group>"; };
+		ED7753DC1B81A42F00BFF966 /* TruthInLendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruthInLendingViewController.h; sourceTree = "<group>"; };
+		ED7753DD1B81A42F00BFF966 /* TruthInLendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruthInLendingViewController.m; sourceTree = "<group>"; };
+		ED7753E01B81AA2D00BFF966 /* LoanDoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanDoneViewController.h; sourceTree = "<group>"; };
+		ED7753E11B81AA2D00BFF966 /* LoanDoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanDoneViewController.m; sourceTree = "<group>"; };
+		ED7753E31B81ACCD00BFF966 /* LoanDone_Middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoanDone_Middle.png; path = Images.xcassets/LoanDone_Middle.png; sourceTree = "<group>"; };
+		ED7753E41B81ACCD00BFF966 /* LoanDone_Top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoanDone_Top.png; path = Images.xcassets/LoanDone_Top.png; sourceTree = "<group>"; };
 		ED9F97CC1B7E5D8C00B633AD /* EditPersonalInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPersonalInfoViewController.h; sourceTree = "<group>"; };
 		ED9F97CD1B7E5D8C00B633AD /* EditPersonalInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPersonalInfoViewController.m; sourceTree = "<group>"; };
 		ED9F97D11B7E761F00B633AD /* FormTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormTextCell.xib; sourceTree = "<group>"; };
@@ -211,6 +232,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED7753DF1B81A49400BFF966 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ED7753E31B81ACCD00BFF966 /* LoanDone_Middle.png */,
+				ED7753E41B81ACCD00BFF966 /* LoanDone_Top.png */,
+				EDED80AD1B7AC9B700D0ECAA /* Images.xcassets */,
+				ED7753D31B819F1600BFF966 /* ChooseYourLoan_Top.png */,
+				ED7753D41B819F1600BFF966 /* LoanOfferOne.png */,
+				ED7753D51B819F1600BFF966 /* LoanOfferTwo.png */,
+				ED7753CF1B816A8C00BFF966 /* SSN_Top.png */,
+				ED7753C81B7EB9CB00BFF966 /* threeBarsHeader.png */,
+				ED7753C91B7EB9CB00BFF966 /* twoBarsHeader.png */,
+				EDE9A53E1B7D86C900B11E20 /* v2-C2_TitleOnly.png */,
+				EDE9A5041B7D489700B11E20 /* v2-b1_nocredit_msg.png */,
+				EDEAB5B41B7BCAAB00DAA650 /* v2_A00.png */,
+				EDEAB5B51B7BCAAB00DAA650 /* v2_K1_footer.png */,
+				EDEAB5B61B7BCAAB00DAA650 /* v2-A1.png */,
+				EDEAB5B71B7BCAAB00DAA650 /* v2-A2.png */,
+				EDEAB5B81B7BCAAB00DAA650 /* v2-B1.png */,
+				EDEAB5B91B7BCAAB00DAA650 /* v2-B2.png */,
+				EDEAB5BA1B7BCAAB00DAA650 /* v2-C1.png */,
+				EDEAB5BB1B7BCAAB00DAA650 /* v2-C2.png */,
+				EDE9A50E1B7D715300B11E20 /* v2-C2_top.png */,
+				EDEAB5BC1B7BCAAB00DAA650 /* v2-C3.png */,
+				EDEAB5BD1B7BCAAB00DAA650 /* v2-D1.png */,
+				EDEAB5BE1B7BCAAB00DAA650 /* v2-E1.png */,
+				EDEAB5BF1B7BCAAB00DAA650 /* v2-F1.png */,
+				EDEAB5C01B7BCAAB00DAA650 /* v2-G1.png */,
+				EDEAB5C11B7BCAAB00DAA650 /* v2-G2.png */,
+				EDEAB5C21B7BCAAB00DAA650 /* v2-H1.png */,
+				EDEAB5C31B7BCAAB00DAA650 /* v2-H2.png */,
+				EDEAB5C41B7BCAAB00DAA650 /* v2-I1.png */,
+				EDEAB5C51B7BCAAB00DAA650 /* v2-I2.png */,
+				EDEAB5C61B7BCAAB00DAA650 /* v2-J1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		EDE9A5311B7D7EE500B11E20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,36 +357,18 @@
 				ED9F97EA1B7EA70B00B633AD /* PersonalData.m */,
 				ED7753C11B7EB69200BFF966 /* SSNViewController.h */,
 				ED7753C21B7EB69200BFF966 /* SSNViewController.m */,
+				ED7753D91B819F4F00BFF966 /* ChooseLoanOfferViewController.h */,
+				ED7753DA1B819F4F00BFF966 /* ChooseLoanOfferViewController.m */,
+				ED7753DC1B81A42F00BFF966 /* TruthInLendingViewController.h */,
+				ED7753DD1B81A42F00BFF966 /* TruthInLendingViewController.m */,
+				ED7753E01B81AA2D00BFF966 /* LoanDoneViewController.h */,
+				ED7753E11B81AA2D00BFF966 /* LoanDoneViewController.m */,
 				EDED80AF1B7AC9B700D0ECAA /* LaunchScreen.xib */,
 				EDED80AA1B7AC9B700D0ECAA /* Main.storyboard */,
 				ED9F97D11B7E761F00B633AD /* FormTextCell.xib */,
 				ED9F97DE1B7E9B7600B633AD /* ButtonTableViewCell.xib */,
 				ED9F97E31B7E9B8E00B633AD /* ImageTableViewCell.xib */,
-				EDED80AD1B7AC9B700D0ECAA /* Images.xcassets */,
-				ED7753C81B7EB9CB00BFF966 /* threeBarsHeader.png */,
-				ED7753C91B7EB9CB00BFF966 /* twoBarsHeader.png */,
-				EDE9A53E1B7D86C900B11E20 /* v2-C2_TitleOnly.png */,
-				EDE9A5041B7D489700B11E20 /* v2-b1_nocredit_msg.png */,
-				EDEAB5B41B7BCAAB00DAA650 /* v2_A00.png */,
-				EDEAB5B51B7BCAAB00DAA650 /* v2_K1_footer.png */,
-				EDEAB5B61B7BCAAB00DAA650 /* v2-A1.png */,
-				EDEAB5B71B7BCAAB00DAA650 /* v2-A2.png */,
-				EDEAB5B81B7BCAAB00DAA650 /* v2-B1.png */,
-				EDEAB5B91B7BCAAB00DAA650 /* v2-B2.png */,
-				EDEAB5BA1B7BCAAB00DAA650 /* v2-C1.png */,
-				EDEAB5BB1B7BCAAB00DAA650 /* v2-C2.png */,
-				EDE9A50E1B7D715300B11E20 /* v2-C2_top.png */,
-				EDEAB5BC1B7BCAAB00DAA650 /* v2-C3.png */,
-				EDEAB5BD1B7BCAAB00DAA650 /* v2-D1.png */,
-				EDEAB5BE1B7BCAAB00DAA650 /* v2-E1.png */,
-				EDEAB5BF1B7BCAAB00DAA650 /* v2-F1.png */,
-				EDEAB5C01B7BCAAB00DAA650 /* v2-G1.png */,
-				EDEAB5C11B7BCAAB00DAA650 /* v2-G2.png */,
-				EDEAB5C21B7BCAAB00DAA650 /* v2-H1.png */,
-				EDEAB5C31B7BCAAB00DAA650 /* v2-H2.png */,
-				EDEAB5C41B7BCAAB00DAA650 /* v2-I1.png */,
-				EDEAB5C51B7BCAAB00DAA650 /* v2-I2.png */,
-				EDEAB5C61B7BCAAB00DAA650 /* v2-J1.png */,
+				ED7753DF1B81A49400BFF966 /* Images */,
 				EDED80A01B7AC9B700D0ECAA /* Supporting Files */,
 				ED7753CC1B7EBD3300BFF966 /* Constants.h */,
 				ED7753CD1B7EBD6500BFF966 /* Constants.m */,
@@ -442,12 +483,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDEAB5D01B7BCAAB00DAA650 /* v2-D1.png in Resources */,
+				ED7753D81B819F1600BFF966 /* LoanOfferTwo.png in Resources */,
 				ED7753CA1B7EB9CB00BFF966 /* threeBarsHeader.png in Resources */,
 				ED9F97E01B7E9B7600B633AD /* ButtonTableViewCell.xib in Resources */,
 				EDED80AC1B7AC9B700D0ECAA /* Main.storyboard in Resources */,
 				EDEAB5D51B7BCAAB00DAA650 /* v2-H1.png in Resources */,
 				EDEAB5D71B7BCAAB00DAA650 /* v2-I1.png in Resources */,
 				EDE9A50F1B7D715300B11E20 /* v2-C2_top.png in Resources */,
+				ED7753D01B816A8C00BFF966 /* SSN_Top.png in Resources */,
 				EDEAB5C71B7BCAAB00DAA650 /* v2_A00.png in Resources */,
 				EDEAB5CE1B7BCAAB00DAA650 /* v2-C2.png in Resources */,
 				EDEAB5CC1B7BCAAB00DAA650 /* v2-B2.png in Resources */,
@@ -458,6 +501,7 @@
 				EDEAB5D41B7BCAAB00DAA650 /* v2-G2.png in Resources */,
 				ED7753CB1B7EB9CB00BFF966 /* twoBarsHeader.png in Resources */,
 				EDEAB5D31B7BCAAB00DAA650 /* v2-G1.png in Resources */,
+				ED7753D71B819F1600BFF966 /* LoanOfferOne.png in Resources */,
 				ED9F97E51B7E9B8E00B633AD /* ImageTableViewCell.xib in Resources */,
 				EDE9A5351B7D81A800B11E20 /* Localizable-Netverify.strings in Resources */,
 				EDEAB5CB1B7BCAAB00DAA650 /* v2-B1.png in Resources */,
@@ -465,9 +509,12 @@
 				EDEAB5D61B7BCAAB00DAA650 /* v2-H2.png in Resources */,
 				EDE9A5361B7D81A800B11E20 /* NetverifyResources.bundle in Resources */,
 				EDE9A53F1B7D86C900B11E20 /* v2-C2_TitleOnly.png in Resources */,
+				ED7753D61B819F1600BFF966 /* ChooseYourLoan_Top.png in Resources */,
 				EDEAB5D91B7BCAAB00DAA650 /* v2-J1.png in Resources */,
 				EDED80AE1B7AC9B700D0ECAA /* Images.xcassets in Resources */,
 				EDEAB5D81B7BCAAB00DAA650 /* v2-I2.png in Resources */,
+				ED7753E61B81ACCD00BFF966 /* LoanDone_Top.png in Resources */,
+				ED7753E51B81ACCD00BFF966 /* LoanDone_Middle.png in Resources */,
 				EDE9A5051B7D489700B11E20 /* v2-b1_nocredit_msg.png in Resources */,
 				EDEAB5C81B7BCAAB00DAA650 /* v2_K1_footer.png in Resources */,
 				EDEAB5C91B7BCAAB00DAA650 /* v2-A1.png in Resources */,
@@ -499,13 +546,16 @@
 				EDED80A61B7AC9B700D0ECAA /* AppDelegate.m in Sources */,
 				EDEAB5E71B7C062700DAA650 /* ApplyForLoanViewController.m in Sources */,
 				ED7753CE1B7EBD6500BFF966 /* Constants.m in Sources */,
+				ED7753DE1B81A42F00BFF966 /* TruthInLendingViewController.m in Sources */,
 				EDE9A5421B7D87B800B11E20 /* EditPersonalInfoTableViewCell.m in Sources */,
 				ED9F97EB1B7EA70B00B633AD /* PersonalData.m in Sources */,
 				EDEAB5E41B7C05D300DAA650 /* RootNavigationController.m in Sources */,
 				EDED80A31B7AC9B700D0ECAA /* main.m in Sources */,
 				EDE9A50B1B7D593E00B11E20 /* PersonalInfoFooter_TableViewCell.m in Sources */,
+				ED7753DB1B819F4F00BFF966 /* ChooseLoanOfferViewController.m in Sources */,
 				EDE9A5121B7D7BEA00B11E20 /* ScanDriversLicenseViewController.m in Sources */,
 				ED9F97D51B7E8D0900B633AD /* FormTextCell.m in Sources */,
+				ED7753E21B81AA2D00BFF966 /* LoanDoneViewController.m in Sources */,
 				EDED80C81B7ACEEA00D0ECAA /* GetStartedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

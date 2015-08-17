@@ -7,10 +7,11 @@
 //
 
 #import "GetStartedViewController.h"
+#import "Constants.h"
 
 @interface GetStartedViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *applyNow_Button;
 
+@property (weak, nonatomic) IBOutlet UIButton *applyNow_Button;
 @property (weak, nonatomic) IBOutlet UIButton *signIn_Button;
 
 @end
@@ -19,7 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.signIn_Button.layer.borderColor = [buttonGreen CGColor];
+    self.signIn_Button.layer.borderWidth = 1.0f;
 }
 
 - (void)didReceiveMemoryWarning {

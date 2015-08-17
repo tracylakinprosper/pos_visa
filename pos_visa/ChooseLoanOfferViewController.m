@@ -1,29 +1,28 @@
 //
-//  SSNViewController.m
+//  ChooseLoanOfferViewController.m
 //  pos_visa
 //
-//  Created by Tracy Lakin on 8/14/15.
+//  Created by Tracy Lakin on 8/16/15.
 //  Copyright (c) 2015 Prosper Marketplace, Inc. All rights reserved.
 //
 
-#import "SSNViewController.h"
+#import "ChooseLoanOfferViewController.h"
 #import "FormTextCell.h"
 #import "ButtonTableViewCell.h"
 #import "ImageTableViewCell.h"
 #import "Constants.h"
 
-@interface SSNViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+@interface ChooseLoanOfferViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
-@implementation SSNViewController
+@implementation ChooseLoanOfferViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.title = @"Personal Info";
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,20 +41,19 @@
 */
 
 
-
 #pragma mark - Table View Delegates
 
-const NSInteger kSSN_TopImageRow    = 0;
-const NSInteger kSSN_EditSSNRow     = 1;
-const NSInteger kSSN_NextButtonRow  = 2;
-const NSInteger kSSN_FooterImageRow = 3;
+const NSInteger kChooseLoan_TopImageRow      = 0;
+const NSInteger kChooseLoan_LoanOfferOneRow  = 1;
+const NSInteger kChooseLoan_LoanOfferTwoRow  = 2;
+const NSInteger kChooseLoan_FooterRow        = 3;
 
-const NSInteger kSSN_TotalRows      = 4;
+const NSInteger kkChooseLoan_TotalRows       = 4;
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return kSSN_TotalRows;
+    return kkChooseLoan_TotalRows;
 }
 
 
@@ -65,38 +63,36 @@ const NSInteger kSSN_TotalRows      = 4;
         return nil;
     
     switch (indexPath.row) {
-        case kSSN_TopImageRow:
+        case kChooseLoan_TopImageRow:
         {
             ImageTableViewCell * cell = [self getImageCell:self.tableView];
-            UIImage * headerImage = [UIImage imageNamed:@"SSN_Top.png"];
+            UIImage * headerImage = [UIImage imageNamed:@"CHooseYourLoan_Top.png"];
             cell.imageForCell.image = headerImage;
             return cell;
         }
             break;
             
-        case kSSN_EditSSNRow:
+        case kChooseLoan_LoanOfferOneRow:
         {
-            FormTextCell * cell = [self getFormCell:self.tableView];
-            cell.titleLabel.text = @"SOCIAL SECURITY NUMBER";
-            cell.editTextField.text = @"***-**-****";
-            cell.secondEditTextField.enabled = NO;
-            cell.editTextField.delegate = self;
+            ImageTableViewCell * cell = [self getImageCell:self.tableView];
+            UIImage * headerImage = [UIImage imageNamed:@"LoanOfferOne.png"];
+            cell.imageForCell.image = headerImage;
+            cell.selectionStyle = UITableViewCellSelectionStyleDefault;
             return cell;
         }
             break;
             
-        case kSSN_NextButtonRow:
+        case kChooseLoan_LoanOfferTwoRow:
         {
-            ButtonTableViewCell * cell = [self getButtonCell:self.tableView];
-            cell.buttonView.titleLabel.text = @"Next";
-            [cell.buttonView addTarget:self
-                                action:@selector(transitionToWaitScreen)
-                      forControlEvents:UIControlEventTouchUpInside];
+            ImageTableViewCell * cell = [self getImageCell:self.tableView];
+            UIImage * headerImage = [UIImage imageNamed:@"LoanOfferTwo.png"];
+            cell.imageForCell.image = headerImage;
+            cell.selectionStyle = UITableViewCellSelectionStyleDefault;
             return cell;
         }
             break;
-            
-        case kSSN_FooterImageRow:
+
+        case kChooseLoan_FooterRow:
         {
             ImageTableViewCell * cell = [self getImageCell:self.tableView];
             UIImage * footerImage = [UIImage imageNamed:@"v2_K1_footer.png"];
@@ -113,35 +109,6 @@ const NSInteger kSSN_TotalRows      = 4;
 }
 
 
-#pragma mark - segue to next storyboard
-
-NSString * const kWaitScreenCalculatingStoryboardID = @"waitScreenCalculatingStoryboardID";
-NSString * const kChooseLoanStoryboardID = @"chooseLoanStoryboardID";
-
-- (void) transitionToWaitScreen
-{
-
-    UIViewController * controller = [self.storyboard instantiateViewControllerWithIdentifier:kWaitScreenCalculatingStoryboardID];
-
-    [self  presentViewController:controller
-                                animated:YES
-                      completion:^{
-                          dispatch_async(dispatch_get_main_queue(), ^{
-                              [self transitionToChooseLoan:controller];
-                          });
-
-    }];
-}
-
-- (void) transitionToChooseLoan:(UIViewController *)controllerToDismiss
-{
-    sleep(1);       // simulate server / network wait for loan offers.
-    [controllerToDismiss dismissViewControllerAnimated: YES completion: nil];
-
-    UIViewController * controller = [self.storyboard instantiateViewControllerWithIdentifier:kChooseLoanStoryboardID];
-
-    [self.navigationController pushViewController:controller animated:YES];
-}
 
 
 - (ButtonTableViewCell *)getButtonCell:(UITableView*)tableView
@@ -178,7 +145,7 @@ NSString * const kChooseLoanStoryboardID = @"chooseLoanStoryboardID";
         formTextCell = [tableView dequeueReusableCellWithIdentifier:FormTextCell_CELL_IDENTIFIER];
     }
     formTextCell.selectionStyle = UITableViewCellSelectionStyleNone;
-//    NSLog(@"getFormCell: %@", formTextCell);
+    //    NSLog(@"getFormCell: %@", formTextCell);
     return formTextCell;
 }
 
@@ -188,19 +155,16 @@ NSString * const kChooseLoanStoryboardID = @"chooseLoanStoryboardID";
     CGFloat height = 0.0f;
     
     switch (indexPath.row) {
-        case kSSN_TopImageRow:
-            height = 232.0f;
-            break;
-            
-        case kSSN_EditSSNRow:
-            height = 75.0f;
-            break;
-            
-        case kSSN_NextButtonRow:
+        case kChooseLoan_TopImageRow:
             height = 90.0f;
             break;
-            
-        case kSSN_FooterImageRow:
+
+        case kChooseLoan_LoanOfferOneRow:
+        case kChooseLoan_LoanOfferTwoRow:
+            height = 239.0f;
+            break;
+
+        case kChooseLoan_FooterRow:
             height = 600.0f;
             break;
             
@@ -211,21 +175,32 @@ NSString * const kChooseLoanStoryboardID = @"chooseLoanStoryboardID";
 }
 
 
-#pragma mark - Text
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    textField.text = @"";       // Do on main thread? TODO
-    textField.textColor = textColor_darkGray;
+    switch (indexPath.row) {
+        case kChooseLoan_TopImageRow:
+        case kChooseLoan_FooterRow:
+        default:
+            break;
+            
+        case kChooseLoan_LoanOfferOneRow:
+        case kChooseLoan_LoanOfferTwoRow:
+            [self transitionToTruthInLendingStoryboard];
+            break;
+    }
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField              // called when 'return' key pressed. return NO to ignore.
+#pragma mark - seque transitionToTruthInLendingStoryboard
+
+NSString * const kTruthInLendingStoryboardID = @"truthInLendingStoryboardID";
+
+
+- (void) transitionToTruthInLendingStoryboard
 {
-    [textField resignFirstResponder];
-    return YES;
+    UIViewController * controller = [self.storyboard instantiateViewControllerWithIdentifier:kTruthInLendingStoryboardID];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+
 }
-
-
-
 
 @end

@@ -9,6 +9,7 @@
 #import "PersonalInfoViewController.h"
 #import "PersonalInfoFooter_TableViewCell.h"
 #import "PersonalInfoTop_TableViewCell.h"
+#import "Constants.h"
 
 @interface PersonalInfoViewController ()  <UITableViewDataSource, UITableViewDelegate>
 
@@ -21,6 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Personal Info";
+    
+//    self.scanButton.layer.borderColor = [buttonGreen CGColor];
+//    self.scanButton.layer.borderWidth = 1.0f;
+
 }
 
 - (void)didReceiveMemoryWarning {

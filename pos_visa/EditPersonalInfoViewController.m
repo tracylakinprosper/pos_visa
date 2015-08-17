@@ -175,29 +175,8 @@ const NSInteger kEditPersonalInfo_TotalRows        = 9;
             ImageTableViewCell * cell = [self getImageCell:self.tableView];
             UIImage * footerImage = [UIImage imageNamed:@"v2_K1_footer.png"];
             
-            NSLog(@"kEditPersonalInfo_FooterImageRow   1  \n footerImage size: %@ \n cell frame: %@  \n imageView frame: %@  \n content frame: %@", NSStringFromCGSize(footerImage.size), NSStringFromCGRect(cell.imageForCell.frame), NSStringFromCGRect(cell.frame), NSStringFromCGRect(cell.contentView.frame));
-
-//            CGRect imageFrame = cell.imageForCell.frame;
-//            imageFrame.size.height = footerImage.size.height;
-//            imageFrame.size.width  = footerImage.size.width;
-//            cell.imageForCell.frame = imageFrame;
-//
-//            CGRect imageFrameCell = cell.frame;
-//            imageFrameCell.size.height = footerImage.size.height;
-//            imageFrameCell.size.width  = footerImage.size.width;
-//            cell.frame = imageFrameCell;
-//
-//            CGRect contentFrame = cell.contentView.frame;
-//            contentFrame.size.height = footerImage.size.height;
-//            contentFrame.size.width  = footerImage.size.width;
-//            cell.contentView.frame = contentFrame;
-//
-//            NSLog(@"kEditPersonalInfo_FooterImageRow   2  \n footerImage size: %@ \n cell frame: %@  \n imageView frame: %@  \n content frame: %@", NSStringFromCGSize(footerImage.size), NSStringFromCGRect(cell.imageForCell.frame), NSStringFromCGRect(cell.frame), NSStringFromCGRect(cell.contentView.frame));
-
-            cell.imageForCell.image = footerImage;
+             cell.imageForCell.image = footerImage;
  
-            NSLog(@"kEditPersonalInfo_FooterImageRow   3  \n footerImage size: %@ \n cell frame: %@  \n imageView frame: %@  \n content frame: %@", NSStringFromCGSize(footerImage.size), NSStringFromCGRect(cell.imageForCell.frame), NSStringFromCGRect(cell.frame), NSStringFromCGRect(cell.contentView.frame));
-           
             return cell;
         }
             break;
@@ -225,6 +204,7 @@ const NSInteger kEditPersonalInfo_TotalRows        = 9;
         [tableView registerNib:nibFile forCellReuseIdentifier:ButtonTextCell_CELL_IDENTIFIER];
         tableViewCell = [tableView dequeueReusableCellWithIdentifier:ButtonTextCell_CELL_IDENTIFIER];
     }
+    tableViewCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return tableViewCell;
 }
 
@@ -236,6 +216,7 @@ const NSInteger kEditPersonalInfo_TotalRows        = 9;
         [tableView registerNib:nibFile forCellReuseIdentifier:ImageTextCell_CELL_IDENTIFIER];
         tableViewCell = [tableView dequeueReusableCellWithIdentifier:ImageTextCell_CELL_IDENTIFIER];
     }
+    tableViewCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return tableViewCell;
 }
 
@@ -248,8 +229,8 @@ const NSInteger kEditPersonalInfo_TotalRows        = 9;
         [tableView registerNib:nibFile forCellReuseIdentifier:FormTextCell_CELL_IDENTIFIER];
         formTextCell = [tableView dequeueReusableCellWithIdentifier:FormTextCell_CELL_IDENTIFIER];
     }
-//    formTextCell.selectionStyle = UITableViewCellSelectionStyleNone;
-    NSLog(@"getFormCell: %@", formTextCell);
+    formTextCell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    NSLog(@"getFormCell: %@", formTextCell);
     return formTextCell;
 }
 
