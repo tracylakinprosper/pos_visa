@@ -66,7 +66,7 @@ const NSInteger kkTruthInLending_TotalRows  = 4;
         case kTruthInLending_TopImageRow:
         {
             ImageTableViewCell * cell = [self getImageCell:self.tableView];
-            UIImage * headerImage = [UIImage imageNamed:@"v2-H1.png"];
+            UIImage * headerImage = [UIImage imageNamed:@"DisclosureTop.png"];
             cell.imageForCell.image = headerImage;
             return cell;
         }
@@ -154,7 +154,7 @@ const NSInteger kkTruthInLending_TotalRows  = 4;
     
     switch (indexPath.row) {
         case kTruthInLending_TopImageRow:
-            height = 2774.0f;
+            height = 2127.0f;
             break;
             
         case kTruthInLending_ButtonRow:

@@ -74,16 +74,44 @@ const NSInteger kkLoanDone_TotalRows  = 4;
         case kLoanDone_ButtonRow:
         {
             ButtonTableViewCell * cell = [self getButtonCell:self.tableView];
-            cell.buttonView.titleLabel.text = @"Add to Passbook";
-            [cell.buttonView setTitleColor:buttonGreen
-                                  forState:UIControlStateNormal];
-            cell.buttonView.backgroundColor = [UIColor whiteColor];
-            cell.buttonView.layer.cornerRadius = 10;
-            cell.buttonView.layer.borderColor = [buttonGreen CGColor];
-            cell.buttonView.layer.borderWidth = 1.0f;
-            [cell.buttonView addTarget:self
+            
+            UIImage * passbookImage = [UIImage imageNamed:@"Add_to_Passbook_Badge_US_sRGB_1014.png"];
+
+            [cell.buttonView removeFromSuperview];
+            CGRect imageRect = CGRectMake(cell.frame.size.width  / 2 - passbookImage.size.width / 8 - 16,
+                                          cell.frame.size.height / 2 - passbookImage.size.height / 8,
+                                          passbookImage.size.width  / 4,
+                                          passbookImage.size.height / 4);
+            UIButton * imageButton = [[UIButton alloc] initWithFrame:imageRect];
+            imageButton.titleLabel.text = @"";
+            imageButton.backgroundColor = [UIColor clearColor];
+            [imageButton setImage:passbookImage forState:UIControlStateNormal];
+
+            [imageButton addTarget:self
                                 action:@selector(addToPassbook)
                       forControlEvents:UIControlEventTouchUpInside];
+            
+            [cell addSubview:imageButton];
+
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                cell.buttonView.titleLabel.text = @"";
+//                cell.buttonView.backgroundColor = [UIColor whiteColor];
+//                UIImage * passbookImage = [[UIImage alloc] initWithContentsOfFile:@"Add_to_Passbook_Badge_US_sRGB_1014.png"];
+//                [cell.buttonView setImage:passbookImage forState:UIControlStateNormal];
+//                
+//                [cell.buttonView addTarget:self
+//                                    action:@selector(addToPassbook)
+//                          forControlEvents:UIControlEventTouchUpInside];
+//            });
+
+            
+//            cell.buttonView.titleLabel.text = @"Add to Passbook";
+//            [cell.buttonView setTitleColor:buttonGreen
+//                                  forState:UIControlStateNormal];
+//            cell.buttonView.backgroundColor = [UIColor whiteColor];
+//            cell.buttonView.layer.cornerRadius = 10;
+//            cell.buttonView.layer.borderColor = [buttonGreen CGColor];
+//            cell.buttonView.layer.borderWidth = 1.0f;
             return cell;
         }
             break;

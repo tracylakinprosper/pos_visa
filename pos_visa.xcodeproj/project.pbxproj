@@ -20,6 +20,8 @@
 		ED7753E21B81AA2D00BFF966 /* LoanDoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7753E11B81AA2D00BFF966 /* LoanDoneViewController.m */; };
 		ED7753E51B81ACCD00BFF966 /* LoanDone_Middle.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753E31B81ACCD00BFF966 /* LoanDone_Middle.png */; };
 		ED7753E61B81ACCD00BFF966 /* LoanDone_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753E41B81ACCD00BFF966 /* LoanDone_Top.png */; };
+		ED7753E81B82509E00BFF966 /* DisclosureTop.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753E71B82509E00BFF966 /* DisclosureTop.png */; };
+		ED7753EA1B82528D00BFF966 /* Add_to_Passbook_Badge_US_sRGB_1014.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7753E91B82528D00BFF966 /* Add_to_Passbook_Badge_US_sRGB_1014.png */; };
 		ED9F97CE1B7E5D8C00B633AD /* EditPersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F97CD1B7E5D8C00B633AD /* EditPersonalInfoViewController.m */; };
 		ED9F97D21B7E761F00B633AD /* FormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED9F97D11B7E761F00B633AD /* FormTextCell.xib */; };
 		ED9F97D51B7E8D0900B633AD /* FormTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9F97D41B7E8D0900B633AD /* FormTextCell.m */; };
@@ -114,6 +116,8 @@
 		ED7753E11B81AA2D00BFF966 /* LoanDoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanDoneViewController.m; sourceTree = "<group>"; };
 		ED7753E31B81ACCD00BFF966 /* LoanDone_Middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoanDone_Middle.png; path = Images.xcassets/LoanDone_Middle.png; sourceTree = "<group>"; };
 		ED7753E41B81ACCD00BFF966 /* LoanDone_Top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoanDone_Top.png; path = Images.xcassets/LoanDone_Top.png; sourceTree = "<group>"; };
+		ED7753E71B82509E00BFF966 /* DisclosureTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DisclosureTop.png; path = Images.xcassets/DisclosureTop.png; sourceTree = "<group>"; };
+		ED7753E91B82528D00BFF966 /* Add_to_Passbook_Badge_US_sRGB_1014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Add_to_Passbook_Badge_US_sRGB_1014.png; path = Images.xcassets/Add_to_Passbook_Badge_US_sRGB_1014.png; sourceTree = "<group>"; };
 		ED9F97CC1B7E5D8C00B633AD /* EditPersonalInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPersonalInfoViewController.h; sourceTree = "<group>"; };
 		ED9F97CD1B7E5D8C00B633AD /* EditPersonalInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPersonalInfoViewController.m; sourceTree = "<group>"; };
 		ED9F97D11B7E761F00B633AD /* FormTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormTextCell.xib; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 		ED7753DF1B81A49400BFF966 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ED7753E91B82528D00BFF966 /* Add_to_Passbook_Badge_US_sRGB_1014.png */,
+				ED7753E71B82509E00BFF966 /* DisclosureTop.png */,
 				ED7753E31B81ACCD00BFF966 /* LoanDone_Middle.png */,
 				ED7753E41B81ACCD00BFF966 /* LoanDone_Top.png */,
 				EDED80AD1B7AC9B700D0ECAA /* Images.xcassets */,
@@ -490,6 +496,7 @@
 				EDEAB5D51B7BCAAB00DAA650 /* v2-H1.png in Resources */,
 				EDEAB5D71B7BCAAB00DAA650 /* v2-I1.png in Resources */,
 				EDE9A50F1B7D715300B11E20 /* v2-C2_top.png in Resources */,
+				ED7753EA1B82528D00BFF966 /* Add_to_Passbook_Badge_US_sRGB_1014.png in Resources */,
 				ED7753D01B816A8C00BFF966 /* SSN_Top.png in Resources */,
 				EDEAB5C71B7BCAAB00DAA650 /* v2_A00.png in Resources */,
 				EDEAB5CE1B7BCAAB00DAA650 /* v2-C2.png in Resources */,
@@ -497,6 +504,7 @@
 				EDEAB5CD1B7BCAAB00DAA650 /* v2-C1.png in Resources */,
 				EDEAB5CA1B7BCAAB00DAA650 /* v2-A2.png in Resources */,
 				EDED80B11B7AC9B700D0ECAA /* LaunchScreen.xib in Resources */,
+				ED7753E81B82509E00BFF966 /* DisclosureTop.png in Resources */,
 				EDEAB5D21B7BCAAB00DAA650 /* v2-F1.png in Resources */,
 				EDEAB5D41B7BCAAB00DAA650 /* v2-G2.png in Resources */,
 				ED7753CB1B7EB9CB00BFF966 /* twoBarsHeader.png in Resources */,
